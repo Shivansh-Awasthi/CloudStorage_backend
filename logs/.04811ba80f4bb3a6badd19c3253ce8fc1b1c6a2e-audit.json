@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/shivansh/Desktop/Storage Service/logs/.04811ba80f4bb3a6badd19c3253ce8fc1b1c6a2e-audit.json",
+    "files": [
+        {
+            "date": 1768834315007,
+            "name": "/Users/shivansh/Desktop/Storage Service/logs/error-2026-01-19.log",
+            "hash": "b68bb3ea835b020b8cc67609737494a71fc089756106a5ae2112be638a2802cb"
+        }
+    ],
+    "hashType": "sha256"
+}
