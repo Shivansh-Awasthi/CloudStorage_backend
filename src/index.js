@@ -6,18 +6,18 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 
-import config from './config/index.js';
-import database from './config/database.js';
-import redis from './config/redis.js';
-import storageProvider from './providers/storage/index.js';
-import routes from './routes/index.js';
-import workerManager from './workers/index.js';
-import uploadCleanupService from './services/UploadCleanupService.js';
-import logger from './utils/logger.js';
-import { AppError } from './utils/errors.js';
-import { preventPathTraversal, sanitizeInput } from './middleware/security.js';
-import { detectAbuse } from './middleware/rateLimiter.js';
-import requestLogger from './middleware/requestLogger.js';
+import config from 'config/index.js';
+import database from 'config/database.js';
+import redis from 'config/redis.js';
+import storageProvider from 'providers/storage/index.js';
+import routes from 'routes/index.js';
+import workerManager from 'workers/index.js';
+import uploadCleanupService from 'services/UploadCleanupService.js';
+import logger from 'utils/logger.js';
+import { AppError } from 'utils/errors.js';
+import { preventPathTraversal, sanitizeInput } from 'middleware/security.js';
+import { detectAbuse } from 'middleware/rateLimiter.js';
+import requestLogger from 'middleware/requestLogger.js';
 
 const app = express();
 
